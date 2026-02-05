@@ -1,0 +1,19 @@
+#这是一个单词卡程序
+#1.我先创建一个单词列表，这里用了“字典”这个数据结构
+word_list={
+    "algorithm":"算法",
+    "data structure":"数据结构",
+    "network":"网络",
+    "operating system":"操作系统",
+    "database":"数据库"
+}
+print("===考研计算机英语单词卡片===（按回车显示释义，输入q退出）")
+#2.我需要一个循环，来让程序反复运行
+for word,meaning in word_list.items():
+    input(f"\n单词:{word}")
+    print(f"释义:{meaning}")
+    #3.我想加一个退出功能
+    user_input=input("\n继续？（按回车继续，输入q退出）:")
+    if user_input == "q":
+        print("程序结束，祝你学习顺利")
+        break
